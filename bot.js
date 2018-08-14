@@ -28,14 +28,7 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
 });
 
-const Discord = require("discord.js");
-  const SNIPERSKY = new Discord.Client();
-    const SNIPERSKYtoken = "NDE3NjI3NTk1NTA1NTMyOTI4.DXXNWQ.kn7L_x1OV7fizN1G9BkFdPJrANE"
-      SNIPERSKY.on('ready', () => {
-        SNIPERSKY.user.setGame(`^bc | By snipersky`,'https://www.twitch.tv/TEST-Broadcast');
-          console.log('Im Ready!');
-  
-        });
+
 
   SNIPERSKY.on('message', message => {
     if (message.content.split(' ')[0] == '^bc')
