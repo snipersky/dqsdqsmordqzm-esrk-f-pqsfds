@@ -28,6 +28,7 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
 });
 
+SNIPERSKY.user.setGame(`^bc | By snipersky`,'https://www.twitch.tv/TEST-Broadcast');
 client.on('message', message => {
     if (message.content.split(' ')[0] == '^bc')
        message.guild.members.forEach( member => {
