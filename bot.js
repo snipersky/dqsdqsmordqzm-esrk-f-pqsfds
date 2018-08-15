@@ -1,12 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '.'
-SNIPERSKY.user.setGame(`^bc | By snipersky`,'https://www.twitch.tv/TEST-Broadcast');
-
+const prefix = '^'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
+client.user.setGame(`^bc | By snipersky`,'https://www.twitch.tv/TEST-Broadcast")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
