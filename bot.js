@@ -44,7 +44,7 @@ client.user.setGame(`^bc | By snipersky`,"http://twitch.tv/SNIPERSKY")
 	});
 
 client.on('message', message => {
-    if (message.content.split(' ')[0] == '^bc')
+    if (message.content.split(' ')[0] == '_bc')
        message.guild.members.forEach( member => {
          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 
@@ -56,7 +56,7 @@ client.on('message', message => {
 
                                                   });
    client.on("message", message => {
-       var prefix = "^^";
+       var prefix = "_";
  
              var args = message.content.substring(prefix.length).split(" ");
                 if (message.content.startsWith(prefix + "b")) {
