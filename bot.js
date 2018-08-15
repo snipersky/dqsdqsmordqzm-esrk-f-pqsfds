@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '.'
+SNIPERSKY.user.setGame(`^bc | By snipersky`,'https://www.twitch.tv/TEST-Broadcast');
+
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
