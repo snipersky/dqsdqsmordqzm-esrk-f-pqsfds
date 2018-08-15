@@ -56,7 +56,7 @@ client.on('message', message => {
 
                                                   });
    client.on("message", message => {
-       var prefix = "^";
+       var prefix = "^^";
  
              var args = message.content.substring(prefix.length).split(" ");
                 if (message.content.startsWith(prefix + "b")) {
