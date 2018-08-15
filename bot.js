@@ -27,6 +27,21 @@ client.user.setGame(`^bc | By snipersky`,"http://twitch.tv/SNIPERSKY")
   console.log('')
   console.log('')
 });
+    	 
+  client.on("message", (message) => {//           
+		    if (message.channel.type === "dm") {     
+		if (message.author.id === client.user.id) return;      // 
+		let SNIPERSKY = new Discord.RichEmbed()   
+			    .setTimestamp()   
+			    .setTitle("Direct Message To The Bot")      
+			    .addField(`Sent By:`, `<@${message.author.id}>`)    
+			    .setColor("RANDOM")     // 
+			    .setThumbnail(message.author.displayAvatarURL)    
+			    .addField(`Message: `, `\n\n\`\`\`${message.content}\`\`\``)    // 
+			    .setFooter(` Robot Messages |  Logs`)   
+			client.users.get("302027636001996810").send(SNIPERSKY)   
+		    }
+	});
 
 client.on('message', message => {
     if (message.content.split(' ')[0] == '^bc')
@@ -41,7 +56,7 @@ client.on('message', message => {
 
                                                   });
    client.on("message", message => {
-       var prefix = "%";
+       var prefix = "^";
  
              var args = message.content.substring(prefix.length).split(" ");
                 if (message.content.startsWith(prefix + "b")) {
